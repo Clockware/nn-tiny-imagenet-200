@@ -6,6 +6,7 @@
 
 #### Env notes:
 - conda install pytorch=0.4.1 cuda90 -c pytorch
+- conda install torchvision
 
 #### Expected typical output:
 
