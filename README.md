@@ -1,6 +1,6 @@
-# tiny-imagenet-200-0.43acc
+# NN for tiny-imagenet-200
 
-- tiny-imagenet-200 (64x64RGB)
+- tiny-imagenet-200 (64x64xRGB)
 - No pretrained weights
 - 43% accuracy (ratio)
 
