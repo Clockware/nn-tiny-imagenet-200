@@ -8,6 +8,7 @@
 
 Downloading tiny-imagenet-200... ./tiny-imagenet-200.zip
 Done.
+
 Weight shapes: [torch.Size([64, 3, 3, 3]), torch.Size([64]), torch.Size([64]), torch.Size([128, 64, 3, 3]), torch.Size([128]), torch.Size([128]), torch.Size([128, 128, 3, 3]), torch.Size([128]), torch.Size([128]), torch.Size([256, 128, 3, 3]), torch.Size([256]), torch.Size([256]), torch.Size([256, 256, 3, 3]), torch.Size([256]), torch.Size([256]), torch.Size([512, 256, 3, 3]), torch.Size([512]), torch.Size([512]), torch.Size([200, 8192]), torch.Size([200])]
 
 Calculating weights... Done.
