@@ -4,6 +4,9 @@
 - No pretrained weights
 - 43% accuracy (ratio)
 
+#### Env notes:
+- conda install pytorch=0.4.1 cuda90 -c pytorch
+
 #### Expected typical output:
 
 Downloading tiny-imagenet-200... ./tiny-imagenet-200.zip
