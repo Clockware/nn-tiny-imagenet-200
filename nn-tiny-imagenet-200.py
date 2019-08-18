@@ -21,12 +21,24 @@ def with_progress_msg(msg, func):
     return result
 
 
+def download_dataset(path,
+                     url='http://cs231n.stanford.edu/tiny-imagenet-200.zip',
+                     tar_name='tiny-imagenet-200.zip'):
+    if not os.path.exists(path):
+        os.mkdir(path)
+    urlretrieve(url, os.path.join(path, tar_name))
+    print (os.path.join(path, tar_name))
+    import zipfile
+    zip_ref = zipfile.ZipFile(os.path.join(path, tar_name), 'r')
+    zip_ref.extractall()
+    zip_ref.close()
+
+
 def ensure_dataset_loaded():
     if os.path.exists("tiny-imagenet-200"):
         return
-    from tiny_img import download_tinyImg200
     data_path = '.'
-    with_progress_msg("Downloading tiny-imagenet-200", lambda: download_tinyImg200(data_path))
+    with_progress_msg("Downloading tiny-imagenet-200", lambda: download_dataset(data_path))
 
     val_fixed_folder = "tiny-imagenet-200/val_fixed"
     if os.path.exists(val_fixed_folder):
