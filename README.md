@@ -5,6 +5,8 @@
 - 43% accuracy (ratio)
 
 #### Env notes:
+- conda create -n NAME python=3.6
+- conda install scikit-learn
 - conda install pytorch=0.4.1 cuda90 -c pytorch
 - conda install torchvision
 
