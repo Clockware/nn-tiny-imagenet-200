@@ -5,6 +5,7 @@ import torch.nn.functional as F
 import PIL
 import os
 from shutil import copyfile
+from urllib.request import urlretrieve
 
 from torchvision import transforms, datasets
 from collections import Counter
@@ -12,6 +13,10 @@ from collections import Counter
 
 IS_CUDA = torch.cuda.is_available()
 DEVICE = "cuda" if IS_CUDA else "cpu"
+print("Device: {0}".format(DEVICE))
+
+if DEVICE == "cuda":
+    print("CUDA Version: {0}".format(torch.version.cuda))
 
 
 def with_progress_msg(msg, func):
